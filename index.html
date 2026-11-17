@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rev. Veronica Silva | Minister, Spiritual Coach, Speaker</title>
+<meta name="description" content="Rev. Veronica Silva is the Senior Minister at Pacific Coast Center for Spiritual Living. Workshops, spiritual coaching, and talks on being both human and divine.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --teal:#123b43;
+  --teal-deep:#0c2a30;
+  --teal-soft:#1d4f58;
+  --rust:#873b22;
+  --rust-dark:#6f2f1a;
+  --tan:#d8c5a8;
+  --cream:#f5ebdd;
+  --cream-soft:#fbf6ee;
+  --ink:#16272b;
+  --radius:22px;
+  --serif:'Fraunces',Georgia,'Times New Roman',serif;
+  --sans:'Roboto',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font-family:var(--sans);color:var(--ink);background:var(--cream-soft);line-height:1.7;font-size:18px;-webkit-font-smoothing:antialiased}
+img,video{max-width:100%;height:auto;display:block}
+a{color:inherit}
+.wrap{width:min(1120px,92%);margin-inline:auto}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.15;letter-spacing:-.01em}
+.eyebrow{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;font-weight:500;color:var(--rust)}
+.on-dark .eyebrow{color:var(--tan)}
+.btn{display:inline-block;padding:.95rem 1.7rem;border-radius:12px;font-weight:500;text-decoration:none;font-size:1rem;transition:transform .2s,background .2s,box-shadow .2s}
+.btn:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--tan);outline-offset:3px}
+.btn-rust{background:var(--rust);color:#fff3e4}
+.btn-rust:hover{background:var(--rust-dark);transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.25)}
+.btn-line{border:1.5px solid var(--tan);color:var(--cream)}
+.btn-line:hover{background:rgba(216,197,168,.15);transform:translateY(-2px)}
+
+/* NAV */
+header.nav{position:sticky;top:0;z-index:50;background:rgba(18,59,67,.96);backdrop-filter:blur(8px);border-bottom:1px solid rgba(216,197,168,.18)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:1rem}
+.brand{font-family:var(--serif);font-size:1.25rem;color:var(--cream);text-decoration:none;font-weight:600;white-space:nowrap}
+.nav nav{display:flex;gap:1.6rem;align-items:center}
+.nav nav a{color:var(--tan);text-decoration:none;font-size:.95rem;font-weight:500}
+.nav nav a:hover{color:#fff}
+.nav nav a.pill{background:var(--rust);color:#fff3e4;padding:.5rem 1.1rem;border-radius:10px}
+@media(max-width:760px){.nav nav a:not(.pill){display:none}}
+
+/* HERO */
+.hero{background:var(--teal);color:var(--cream);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:auto -10% -40% auto;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(135,59,34,.38),transparent 68%)}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:3.5rem;align-items:center;padding:5.5rem 0 6rem;position:relative}
+.hero h1{font-size:clamp(2.4rem,5.2vw,4rem);color:var(--cream);margin:1rem 0 1.4rem}
+.hero h1 em{color:var(--tan);font-weight:400}
+.hero p.lede{font-size:1.2rem;color:var(--tan);max-width:34em;margin-bottom:2.2rem}
+.hero .cta{display:flex;gap:1rem;flex-wrap:wrap}
+.portrait{position:relative;justify-self:center;width:min(100%,400px)}
+.portrait img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:50% 20%;border-radius:200px 200px var(--radius) var(--radius);box-shadow:0 30px 60px rgba(0,0,0,.35)}
+.portrait::after{content:"";position:absolute;inset:18px -18px -18px 18px;border:2px solid var(--tan);border-radius:200px 200px var(--radius) var(--radius);z-index:-1;opacity:.55}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr;padding:3.5rem 0 4.5rem;gap:3rem}.portrait{width:min(78%,340px)}}
+
+/* swatch strip echoing brand file */
+.strip{display:grid;grid-template-columns:3fr 1.6fr 1fr .6fr;height:14px}
+.strip i:nth-child(1){background:var(--teal-deep)}.strip i:nth-child(2){background:var(--rust)}.strip i:nth-child(3){background:var(--tan)}.strip i:nth-child(4){background:var(--cream)}
+
+/* ABOUT */
+section{padding:6rem 0}
+.about{background:var(--cream)}
+.about .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:4rem;align-items:start}
+.about img{width:100%;border-radius:var(--radius);box-shadow:0 20px 45px rgba(18,59,67,.2)}
+.about h2{font-size:clamp(2rem,3.6vw,2.8rem);color:var(--teal);margin:.8rem 0 1.4rem}
+.about p{margin-bottom:1.2rem;color:#2a3d41}
+.about p.big{font-family:var(--serif);font-size:1.35rem;line-height:1.5;color:var(--teal);font-style:italic}
+.creds{list-style:none;margin-top:2rem;display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.creds li{background:var(--cream-soft);border-left:4px solid var(--rust);padding:1rem 1.1rem;border-radius:0 12px 12px 0;font-size:.95rem;line-height:1.45}
+.creds b{display:block;font-family:var(--serif);font-size:1.5rem;color:var(--teal);font-weight:600}
+@media(max-width:860px){.about .wrap{grid-template-columns:1fr;gap:2.5rem}.about img{max-width:380px}.creds{grid-template-columns:1fr}}
+
+/* OFFERINGS */
+.offer{background:var(--teal);color:var(--cream)}
+.offer .head{max-width:40rem;margin-bottom:3.2rem}
+.offer h2{font-size:clamp(2rem,3.6vw,2.8rem);margin-top:.8rem}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem}
+.card{background:var(--teal-soft);border:1px solid rgba(216,197,168,.22);border-radius:var(--radius);padding:2.2rem 2rem 2.4rem;display:flex;flex-direction:column;gap:1rem;position:relative;transition:transform .25s,border-color .25s}
+.card:hover{transform:translateY(-6px);border-color:var(--tan)}
+.card .n{font-family:var(--serif);font-size:3rem;color:var(--rust);line-height:1;filter:brightness(1.5)}
+.card h3{font-size:1.7rem;color:var(--cream)}
+.card p{font-size:1rem;color:#e6dbc9;line-height:1.7}
+.card p:first-of-type{color:var(--tan);font-family:var(--serif);font-size:1.12rem;line-height:1.55}
+@media(max-width:960px){.cards{grid-template-columns:1fr}}
+
+/* VIDEO */
+.watch{background:var(--cream-soft)}
+.watch .head{text-align:center;max-width:42rem;margin:0 auto 2.6rem}
+.watch h2{font-size:clamp(2rem,3.6vw,2.8rem);color:var(--teal);margin:.8rem 0 .8rem}
+.watch .head p{color:#3a4f53}
+.player{max-width:900px;margin:auto;border-radius:var(--radius);overflow:hidden;background:var(--teal-deep);box-shadow:0 30px 60px rgba(18,59,67,.3);border:6px solid var(--teal)}
+.player video{width:100%;aspect-ratio:1200/628;background:#000}
+
+/* GALLERY */
+.gallery{background:var(--cream)}
+.gallery .head{margin-bottom:2.4rem;max-width:36rem}
+.gallery h2{font-size:clamp(2rem,3.6vw,2.8rem);color:var(--teal);margin-top:.8rem}
+.grid{columns:3 260px;column-gap:1.2rem}
+.grid figure{break-inside:avoid;margin-bottom:1.2rem;border-radius:18px;overflow:hidden;background:var(--teal);position:relative}
+.grid img{width:100%;transition:transform .6s}
+.grid figure:hover img{transform:scale(1.04)}
+
+/* CONNECT */
+.connect{background:var(--rust);color:var(--cream);text-align:center;position:relative;overflow:hidden}
+.connect .wrap{max-width:46rem}
+.connect img{width:132px;height:132px;border-radius:50%;object-fit:cover;object-position:50% 25%;margin:0 auto 1.8rem;border:4px solid var(--tan)}
+.connect h2{font-size:clamp(2rem,3.8vw,3rem);margin-bottom:1.1rem}
+.connect p{color:#f2dfc8;font-size:1.12rem;margin-bottom:2rem}
+.btn-cream{background:var(--cream);color:var(--teal)}
+.btn-cream:hover{background:#fff;transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.25)}
+
+footer{background:var(--teal-deep);color:var(--tan);padding:2.4rem 0;font-size:.9rem;text-align:center}
+footer a{color:var(--cream)}
+
+/* reveal */
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .reveal{opacity:1;transform:none;transition:none}*{transition:none!important}}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Rev. Veronica Silva</a>
+    <nav aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#offerings">Offerings</a>
+      <a href="#watch">Watch</a>
+      <a href="#gallery">Gallery</a>
+      <a class="pill" href="#connect">Connect</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero on-dark" style="padding:0">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Minister · Spiritual Coach · Speaker</p>
+      <h1>How to love ourselves <em>in the middle of becoming.</em></h1>
+      <p class="lede">As a minister and former charge nurse, I have spent time with people in moments of joy, uncertainty, and change. I bring that experience to talks about presence, relationships, and the courage to be ourselves.</p>
+      <div class="cta">
+        <a class="btn btn-rust" href="#offerings">Explore ways to work together</a>
+        <a class="btn btn-line" href="#watch">Watch a talk</a>
+      </div>
+    </div>
+    <div class="portrait">
+      <img src="assets/veronica-portrait.jpg" alt="Rev. Veronica Silva smiling in a green jacket, standing in front of a twisted tree" width="1000" height="1500" fetchpriority="high">
+    </div>
+  </div>
+</section>
+<div class="strip" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <img class="reveal" src="assets/veronica-mustard.jpg" alt="Rev. Veronica Silva in a mustard cardigan holding a sheet of paper while speaking" width="592" height="732" loading="lazy">
+    <div class="reveal">
+      <p class="eyebrow">About</p>
+      <h2>Spirit, science, and a lot of heart</h2>
+      <p class="big">Rev. Veronica Silva is the Senior Minister at Pacific Coast Center for Spiritual Living.</p>
+      <p>With a deep commitment to spiritual growth and personal transformation, Rev. Veronica is passionate about exploring the intersections of spirituality, emotional intelligence, and mental liberation. Having navigated the challenges of getting sober in 1996, she is a strong advocate for shadow work and believes that the integration of spiritual and emotional intelligence fosters profound inner freedom, creating space for the Divine to express through and as one's life.</p>
+      <p>Rev. Veronica brings over 15 years of experience as a Registered Nurse, including her role as Charge Nurse of a hospital COVID unit during the height of the pandemic from 2020 to 2021. She actively promoted a mindfulness program for the nurses at her hospital to support their wellbeing. In addition to her healthcare career, she successfully operated a beloved yoga studio, FreeSpirit Yoga, in Long Beach, California.</p>
+      <ul class="creds">
+        <li><b>2007</b>Bachelor of Science in Nursing</li>
+        <li><b>2021</b>Master's Degree in Spiritual Consciousness</li>
+        <li><b>500 hr</b>Certified yoga instructor since 2005</li>
+        <li><b>15+ years</b>Registered Nurse, including COVID unit Charge Nurse</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="offer on-dark" id="offerings">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="eyebrow">Offerings</p>
+      <h2>Three ways to journey together</h2>
+    </div>
+    <div class="cards">
+      <article class="card reveal">
+        <span class="n" aria-hidden="true">01</span>
+        <h3>Workshop Facilitator</h3>
+        <p>What happens in you when someone tells you you're wrong? How do you stay open to what they're saying while honoring what's true for you? These are the kinds of questions I bring into a workshop.</p>
+        <p>I weave short teachings with guided reflection, paired conversations, and group dialogue. In workshops like <em>You Are Wrong</em>, we notice what happens when we feel misunderstood, get curious about the assumptions we make, and practice listening across differences. You get to choose how much you share. The practice is something you can take into your next conversation, whether it's at home, at work, or in your community.</p>
+      </article>
+      <article class="card reveal">
+        <span class="n" aria-hidden="true">02</span>
+        <h3>Spiritual Coach</h3>
+        <p>Sometimes you need a place to say what you've been carrying around. Sometimes you know what matters to you and want support living it more fully. I offer spiritual coaching for both kinds of moments.</p>
+        <p>As your guide, I listen deeply and help you notice patterns in how you think, respond, and relate to others. Together, we get curious about those patterns and explore steps you can take toward your own freedom. I offer simple practices to help you stay present and grounded in difficult situations, so you have more room to choose how you want to respond.</p>
+      </article>
+      <article class="card reveal">
+        <span class="n" aria-hidden="true">03</span>
+        <h3>Speaker</h3>
+        <p>I find some of my best material in the middle of everyday life. A conversation that goes sideways, a moment when I catch myself doing the very thing I said I'd never do. There's depth in those moments, usually some humor, and often a place where healing can begin.</p>
+        <p>When I speak, I explore what it means to be both human and divine. I invite us to dig a little deeper, tell the truth about what it's like to be human, and laugh gently at ourselves along the way. What I teach is something I'm still practicing myself: how to love ourselves in the middle of becoming.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="watch" id="watch">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="eyebrow">Watch</p>
+      <h2>Gratitude in Difficult Times</h2>
+      <p>A talk from Pacific Coast Center for Spiritual Living on practicing gratitude when life is not easy.</p>
+    </div>
+    <div class="player reveal">
+      <video controls preload="metadata" playsinline aria-label="Gratitude in Difficult Times, a talk by Rev. Veronica Silva">
+        <source src="assets/gratitude-in-difficult-times.mp4#t=0.8" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</section>
+
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="eyebrow">Gallery</p>
+      <h2>Moments from the stage and beyond</h2>
+    </div>
+    <div class="grid">
+      <figure class="reveal"><img src="assets/speaking-gold.jpg" alt="Rev. Veronica speaking from a lectern in a golden yellow blouse" width="1200" height="1100" loading="lazy"></figure>
+      <figure class="reveal"><img src="assets/veronica-headshot.jpg" alt="Portrait of Rev. Veronica Silva wearing plum glasses and smiling" width="800" height="1206" loading="lazy"></figure>
+      <figure class="reveal"><img src="assets/sound-bowls.jpg" alt="Rev. Veronica standing before colorful crystal singing bowls and a candle during a service" width="1200" height="916" loading="lazy"></figure>
+      <figure class="reveal"><img src="assets/playful-glasses.jpg" alt="Rev. Veronica with arms wide, wearing two pairs of sunglasses during a talk" width="1200" height="780" loading="lazy"></figure>
+      <figure class="reveal"><img src="assets/veronica-peach.jpg" alt="Rev. Veronica smiling in a coral top and patterned scarf in front of green plants" width="800" height="1263" loading="lazy"></figure>
+      <figure class="reveal"><img src="assets/viewfinder.jpg" alt="Rev. Veronica looking through a red retro viewfinder toy while speaking" width="1200" height="888" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="connect on-dark" id="connect">
+  <div class="wrap reveal">
+    <img src="assets/veronica-headshot.jpg" alt="Rev. Veronica Silva" width="132" height="132" loading="lazy">
+    <p class="eyebrow" style="color:var(--tan)">Connect</p>
+    <h2>Let's start a conversation</h2>
+    <p>Whether you are curious about a workshop for your community, a coaching conversation, or inviting Rev. Veronica to speak, the best place to begin is Pacific Coast Center for Spiritual Living.</p>
+    <a class="btn btn-cream" href="https://www.pacificcsl.org" target="_blank" rel="noopener">Visit pacificcsl.org</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© <span id="yr">2026</span> Rev. Veronica Silva · Senior Minister, <a href="https://www.pacificcsl.org" target="_blank" rel="noopener">Pacific Coast Center for Spiritual Living</a></p>
+  </div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
